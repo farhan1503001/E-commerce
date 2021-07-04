@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
-main{
+.main{
   min-height: 85vh;
+}
+
+.rating{
+ margin: 0.1rem;
 }
