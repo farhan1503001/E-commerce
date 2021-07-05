@@ -1,9 +1,12 @@
 import React from 'react'
 import {Row,Col} from 'react-bootstrap';
 //Now adding products json file
-import products from '../products'
 import Product from '../components/Product';
+import React, { useState,useEffect } from 'react';
+import axios from 'axios';//For connection with api
 function Homescreen() {
+    //Initializing state
+    const [products,setProduct]=useState([])
     return (
         <div>
             <h1>Products List</h1>
